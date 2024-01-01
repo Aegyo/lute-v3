@@ -99,7 +99,7 @@ def _start(args):
     serve(app, host="0.0.0.0", port=args.port)
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description="Start lute.")
     parser.add_argument(
         "--port", type=int, default=5000, help="Port number (default: 5000)"
@@ -117,3 +117,6 @@ if __name__ == "__main__":
         print(e)
         print("Please try again, or report an issue on GitHub.")
         print("-" * 50)
+
+if __name__ == "__main__":
+    main()
